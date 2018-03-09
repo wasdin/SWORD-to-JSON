@@ -1,5 +1,9 @@
 from pysword.modules import SwordModules
-import argparse, json
+import argparse, json, sys
+
+if sys.version_info > (3, 0):
+    from past.builtins import xrange
+
 
 def generate_dict(source_file, bible_version):
     modules = SwordModules(source_file)
