@@ -13,9 +13,9 @@ def generate_dict(source_file, bible_version):
 
     for book in books:
         chapters = []
-        for chapter in xrange(1, book.num_chapters+1):
+        for chapter in range(1, book.num_chapters+1):
             verses = []
-            for verse in xrange(1, len(book.get_indicies(chapter))+1 ):
+            for verse in range(1, len(book.get_indicies(chapter))+1 ):
                 verses.append({
                     'verse': verse,
                     'chapter': chapter,
